@@ -6,19 +6,7 @@ int main()
 	printf("Enter Number of processes: ");
 	scanf("%d",&a);
 	printf("Enter the responsetime\n");
-	for(i=0;i<a;i++)
-	{
-		printf("Response time of P%d (in milliseconds): ",i);
-		scanf("%d",&responsetime[i]);
-		if(responsetime[i]<1000)
-		{
-			type[i]=1;
-		}
-		else
-		{
-			type[i]=0;
-		}
-	}
+	
 	printf("Process Number\tResponse Time\tType\t\t\tPriority");
 	for(i=0;i<a;i++)
 	{
